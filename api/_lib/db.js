@@ -181,7 +181,7 @@ export async function initializeDatabase() {
       ON CONFLICT (id) DO NOTHING`
   }
 
-  const uicId = 'uic_a12'
+  const uicId = 'uic_b48'
   const imports = [
     { id: 'imp_matsit_seed', uicId, importType: 'matsit', fileName: 'MATSIT Vehicles Only.XLSX', rows: seedRows.matsit },
     { id: 'imp_ssl_seed', uicId, importType: 'ssl', fileName: 'SSL Example Vehicles Only.xlsx', rows: seedRows.ssl },

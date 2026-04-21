@@ -122,10 +122,10 @@ export default function App() {
   async function loadData(forceUicId) {
     try {
       setLoading(true)
-      const bootstrap = await getBootstrap(forceUicId || loggedInUIC?.id || 'uic_a12')
+      const bootstrap = await getBootstrap(forceUicId || loggedInUIC?.id || 'uic_b48')
       setUics(bootstrap.uics)
       setLocations(bootstrap.locations)
-      const nextUic = bootstrap.uics.find((uic) => uic.id === (forceUicId || loggedInUIC?.id || 'uic_a12')) || bootstrap.uics[0]
+      const nextUic = bootstrap.uics.find((uic) => uic.id === (forceUicId || loggedInUIC?.id || 'uic_b48')) || bootstrap.uics[0]
       setLoggedInUIC(nextUic)
       setDataset(bootstrap.dataset)
       setShopStock(bootstrap.shopStockLines)
